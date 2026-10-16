@@ -43,3 +43,19 @@ Parce que cela ne serait pas correcte au niveau syntaxe, imaginons qu'à chaque 
 *Où placez-vous la quantité ?* \
 
 Dans la table `commande_plat` \
+
+# ETUPE 4
+`client` \
+- **id**
+- nom
+- prenom
+- telephone
+
+`commande_client` \
+- **id**
+- #commande_id
+- #client_id
+
+* Votre clé étrangère est-elle NOT NULL ? Quelle jointure faut-il pour ne perdre aucune commande ?* \
+
+La clé de client peut être null, pour les clients de passage, seul commande_id est obligatoir pour lister les commandes même sans clients
